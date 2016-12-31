@@ -11,19 +11,19 @@ This package allows to adjust the money spent by different members of a group.
 
 First you need to import the classes pot.py and expense.py 
 
-```bash
+```python
 import pot, expense
 ```
 
 Then, dedeclare a pot:
 
-```bash
+```python
 travelPot = pot.pot()
 ```
 
 Add the people that is participating. If there's an initial pot, add it in the `amount` field.
 
-```bash
+```python
 travelPot.addContribution(person='John', amount=50.)
 travelPot.addContribution(person='Steve', amount=10.)
 travelPot.addContribution(person='Ann', amount=0.)
@@ -31,13 +31,13 @@ travelPot.addContribution(person='Ann', amount=0.)
 
 Then you need to create the dictionary with the expenses:
 
-```bash
+```python
 expenseDict = {}
 ```
 
 And fill it with the different expenses, adding the information about who paid and among whom this needs to be shared. Don't forget to `computePricePerParticipant()` to enable the expense.
 
-```bash
+```python
 expenseDict["expenseA"] = expense.expense()
 expenseDict["expenseA"].setExpenseName("expenseA")
 expenseDict["expenseA"].addPayerAndAmount(payerName='John', amount=100.)
@@ -48,7 +48,7 @@ expenseDict["expenseA"].computePricePerParticipant()
 
 Add the dictionary to the `expenseManager` and retrieve the information:
 
-```bash
+```python
 expensemanager = expense.expenseManager(expensesDict=expenseDict)
 expensemanager.compute()
 
@@ -59,6 +59,6 @@ dictPaid     = expensemanager.retrieveDict()[1]
 
 Finally print the information to copy&paste to the members of the group:
 
-```bash
+```python
 printSummary(dictPot=dictPot, dictExpenses=dictExpenses, dictPaid=dictPaid)
 ```
