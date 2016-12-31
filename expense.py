@@ -24,10 +24,10 @@ class expense(object):
         strToReturn += "Quantitat a pagar per participant: %.2f\n" % (self.pricePerParticipant)
         strToReturn += "Llista de pagadors:\n"
         for i in range(len(self.payerList)):
-            strToReturn += "%s - %.2f\n" % (self.payerList[i], self.splittedPaid[i])
-        strToReturn += "Llista de beneficiaris (sense el pagador):\n"
+            strToReturn += "\t- %s - %.2f\n" % (self.payerList[i], self.splittedPaid[i])
+        strToReturn += "Llista de beneficiats (sense els pagadors):\n"
         for i in range(len(self.beneficiaryList)):
-            strToReturn += "%s\n" % (self.beneficiaryList[i])
+            strToReturn += "\t- %s\n" % (self.beneficiaryList[i])
         strToReturn += "\n"
         return strToReturn
 

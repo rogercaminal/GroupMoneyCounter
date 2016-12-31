@@ -12,7 +12,7 @@ def printSummary(pot, expensemanager):
     peopleParticipating = set(dictPot.keys() + dictExpenses.keys())
     print str("PERSONA").ljust(20),
     print str("POT").ljust(20),
-    print str("PAGAT EXTRA").ljust(20),
+    print str("PAGAT").ljust(20),
     print str("CONSUMIT").ljust(20),
     print str("QUANTITAT NETA").ljust(20)
     for person in peopleParticipating:
@@ -41,34 +41,44 @@ if __name__=="__main__":
     listMenjar.append('Adria')
     listMenjar.append('Albert')
     listMenjar.append('Carles')
-    listMenjar.append('CeciRoger')
-    listMenjar.append('LauraXavi')
+    listMenjar.append('Ceci')
+    listMenjar.append('RogerC')
+    listMenjar.append('Laura')
+    listMenjar.append('Manrique')
     listMenjar.append('Meri')
     listMenjar.append('Montse')
     listMenjar.append('NataliaG')
     listMenjar.append('NataliaL')
+    listMenjar.append('Oscar')
+    listMenjar.append('XaviB')
     listMenjar.append('Raquel')
     listMenjar.append('RogerE')
     listMenjar.append('Melero')
     listMenjar.append('JEnric')
-    listMenjar.append('Marta')
+#    listMenjar.append('Marta')
 
     listBeure = []
     listBeure.append('Adria')
     listBeure.append('Albert')
     listBeure.append('Carles')
-    listBeure.append('CeciRoger')
-    listBeure.append('LauraXavi')
+    listBeure.append('Ceci')
+    listBeure.append('RogerC')
+    listBeure.append('Laura')
+    listBeure.append('Manrique')
     listBeure.append('Meri')
     listBeure.append('Montse')
     listBeure.append('NataliaG')
     listBeure.append('NataliaL')
+    listBeure.append('Oscar')
+    listBeure.append('XaviB')
     listBeure.append('RogerE')
     listBeure.append('Melero')
     listBeure.append('JEnric')
-    listBeure.append('Marta')
-    listBeure.append('MonicaMiquel')
-    listBeure.append('AnnaAlex')
+#    listBeure.append('Marta')
+    listBeure.append('Miquel')
+    listBeure.append('Monica')
+    listBeure.append('Anna')
+    listBeure.append('Alex')
 
     listAll = list(set(listMenjar + listBeure))
 
@@ -89,7 +99,7 @@ if __name__=="__main__":
     # Raim
     expenseDict["Raim"] = expense.expense()
     expenseDict["Raim"].setExpenseName("Raim")
-    expenseDict["Raim"].addPayerAndAmount(payerName='LauraXavi', amount=4.88)
+    expenseDict["Raim"].addPayerAndAmount(payerName='Laura', amount=4.88)
     for person in listMenjar:
         expenseDict["Raim"].addBeneficiary(beneficiaryName=person)
     expenseDict["Raim"].computePricePerParticipant()
@@ -129,7 +139,7 @@ if __name__=="__main__":
     # Gintonic
     expenseDict["Gintonic"] = expense.expense()
     expenseDict["Gintonic"].setExpenseName("Gintonic")
-    expenseDict["Gintonic"].addPayerAndAmount(payerName='MonicaMiquel', amount=52.95)
+    expenseDict["Gintonic"].addPayerAndAmount(payerName='Miquel', amount=52.95)
     for person in listBeure:
         expenseDict["Gintonic"].addBeneficiary(beneficiaryName=person)
     expenseDict["Gintonic"].computePricePerParticipant()
@@ -137,10 +147,58 @@ if __name__=="__main__":
     # Pica-pica
     expenseDict["PicaPica"] = expense.expense()
     expenseDict["PicaPica"].setExpenseName("PicaPica")
-    expenseDict["PicaPica"].addPayerAndAmount(payerName='CeciRoger', amount=26.29)
+    expenseDict["PicaPica"].addPayerAndAmount(payerName='RogerC', amount=26.29)
     for person in listMenjar:
         expenseDict["PicaPica"].addBeneficiary(beneficiaryName=person)
     expenseDict["PicaPica"].computePricePerParticipant()
+
+    # Amanida
+    expenseDict["Amanida"] = expense.expense()
+    expenseDict["Amanida"].setExpenseName("Amanida")
+    expenseDict["Amanida"].addPayerAndAmount(payerName='Montse', amount=22.00)
+    for person in listMenjar:
+        expenseDict["Amanida"].addBeneficiary(beneficiaryName=person)
+    expenseDict["Amanida"].computePricePerParticipant()
+
+    # Hummus
+    expenseDict["Hummus"] = expense.expense()
+    expenseDict["Hummus"].setExpenseName("Hummus")
+    expenseDict["Hummus"].addPayerAndAmount(payerName='Raquel', amount=7.5)
+    for person in listMenjar:
+        expenseDict["Hummus"].addBeneficiary(beneficiaryName=person)
+    expenseDict["Hummus"].computePricePerParticipant()
+
+    # Vi negre
+    expenseDict["ViNegre"] = expense.expense()
+    expenseDict["ViNegre"].setExpenseName("ViNegre")
+    expenseDict["ViNegre"].addPayerAndAmount(payerName='RogerE', amount=19.00)
+    for person in listMenjar:
+        expenseDict["ViNegre"].addBeneficiary(beneficiaryName=person)
+    expenseDict["ViNegre"].computePricePerParticipant()
+
+    # Torrons
+    expenseDict["Torrons"] = expense.expense()
+    expenseDict["Torrons"].setExpenseName("Torrons")
+    expenseDict["Torrons"].addPayerAndAmount(payerName='Carles', amount=7.52)
+    for person in listMenjar:
+        expenseDict["Torrons"].addBeneficiary(beneficiaryName=person)
+    expenseDict["Torrons"].computePricePerParticipant()
+
+    # Cervesa
+    expenseDict["Cervesa"] = expense.expense()
+    expenseDict["Cervesa"].setExpenseName("Cervesa")
+    expenseDict["Cervesa"].addPayerAndAmount(payerName='NataliaL', amount=24.00)
+    for person in listAll:
+        expenseDict["Cervesa"].addBeneficiary(beneficiaryName=person)
+    expenseDict["Cervesa"].computePricePerParticipant()
+
+    # Vi blanc
+    expenseDict["ViBlanc"] = expense.expense()
+    expenseDict["ViBlanc"].setExpenseName("ViBlanc")
+    expenseDict["ViBlanc"].addPayerAndAmount(payerName='Albert', amount=20.00)
+    for person in listMenjar:
+        expenseDict["ViBlanc"].addBeneficiary(beneficiaryName=person)
+    expenseDict["ViBlanc"].computePricePerParticipant()
 
     # Create expense manager
     expensemanager = expense.expenseManager(expensesDict=expenseDict)
