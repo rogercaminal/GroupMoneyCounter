@@ -18,15 +18,15 @@ import pot, expense
 Then, dedeclare a pot:
 
 ```python
-travelPot = pot.pot()
+Pot = pot.pot()
 ```
 
 Add the people that is participating. If there's an initial pot, add it in the `amount` field.
 
 ```python
-travelPot.addContribution(person='John', amount=50.)
-travelPot.addContribution(person='Steve', amount=10.)
-travelPot.addContribution(person='Ann', amount=0.)
+Pot.addContribution(person='John', amount=50.)
+Pot.addContribution(person='Steve', amount=10.)
+Pot.addContribution(person='Ann', amount=0.)
 ```
 
 Then you need to create the dictionary with the expenses:
@@ -51,14 +51,11 @@ Add the dictionary to the `expenseManager` and retrieve the information:
 ```python
 expensemanager = expense.expenseManager(expensesDict=expenseDict)
 expensemanager.compute()
-
-dictPot      = travelPot.retrieveDict()
-dictExpenses = expensemanager.retrieveDict()[0]
-dictPaid     = expensemanager.retrieveDict()[1]
 ```
 
 Finally print the information to copy&paste to the members of the group:
 
 ```python
-printSummary(dictPot=dictPot, dictExpenses=dictExpenses, dictPaid=dictPaid)
+import compute
+compute.printSummary(pot=Pot, expensemanager=expensemanager)
 ```

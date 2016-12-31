@@ -25,7 +25,7 @@ class expense(object):
         strToReturn += "Llista de pagadors:\n"
         for i in range(len(self.payerList)):
             strToReturn += "%s - %.2f\n" % (self.payerList[i], self.splittedPaid[i])
-        strToReturn += "Llista de beneficiaris (+ el pagador):\n"
+        strToReturn += "Llista de beneficiaris (sense el pagador):\n"
         for i in range(len(self.beneficiaryList)):
             strToReturn += "%s\n" % (self.beneficiaryList[i])
         strToReturn += "\n"
@@ -41,8 +41,9 @@ class expense(object):
         self.totalParticipants += 1
 
     def addBeneficiary(self, beneficiaryName):
-        self.beneficiaryList.append(beneficiaryName)
-        self.totalParticipants += 1
+        if beneficiaryName not in self.payerList:
+            self.beneficiaryList.append(beneficiaryName)
+            self.totalParticipants += 1
 
     def computePricePerParticipant(self):
         self.pricePerParticipant = self.totalPaid/self.totalParticipants
