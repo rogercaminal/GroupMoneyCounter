@@ -55,7 +55,6 @@ if __name__=="__main__":
     listMenjar.append('RogerE')
     listMenjar.append('Melero')
     listMenjar.append('JEnric')
-#    listMenjar.append('Marta')
 
     listBeure = []
     listBeure.append('Adria')
@@ -67,18 +66,13 @@ if __name__=="__main__":
     listBeure.append('Manrique')
     listBeure.append('Meri')
     listBeure.append('Montse')
-    listBeure.append('NataliaG')
     listBeure.append('NataliaL')
     listBeure.append('Oscar')
-    listBeure.append('XaviB')
     listBeure.append('RogerE')
     listBeure.append('Melero')
     listBeure.append('JEnric')
-#    listBeure.append('Marta')
     listBeure.append('Miquel')
     listBeure.append('Monica')
-    listBeure.append('Anna')
-    listBeure.append('Alex')
 
     listAll = list(set(listMenjar + listBeure))
 
