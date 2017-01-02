@@ -10,17 +10,17 @@ def printSummary(pot, expensemanager):
     dictPaid     = expensemanager.retrieveDict()[1]
 
     peopleParticipating = set(dictPot.keys() + dictExpenses.keys())
-    print str("PERSONA").ljust(20),
-    print str("POT").ljust(20),
-    print str("PAGAT").ljust(20),
-    print str("CONSUMIT").ljust(20),
-    print str("QUANTITAT NETA").ljust(20)
+    print str("PERSONA").ljust(15),
+    print str("POT").ljust(15),
+    print str("PAGAT").ljust(15),
+    print str("CONSUMIT").ljust(15),
+    print str("QUANTITAT NETA").ljust(15)
     for person in peopleParticipating:
-        print str(person).ljust(20),
-        print str("%.2f" % (dictPot[person])).ljust(20),
-        print str("%.2f" % (dictPaid[person])).ljust(20),
-        print str("%.2f" % (dictExpenses[person])).ljust(20),
-        print str("%+.2f" % (dictPot[person] + dictPaid[person] - dictExpenses[person])).ljust(20)
+        print str(person).ljust(15),
+        print str("%.2f" % (dictPot[person])).ljust(15),
+        print str("%.2f" % (dictPaid[person])).ljust(15),
+        print str("%.2f" % (dictExpenses[person])).ljust(15),
+        print str("%+.2f" % (dictPot[person] + dictPaid[person] - dictExpenses[person])).ljust(15)
 
     if (debug):
 #        print "\n\n====================================================\n"
@@ -193,6 +193,14 @@ if __name__=="__main__":
     for person in listMenjar:
         expenseDict["ViBlanc"].addBeneficiary(beneficiaryName=person)
     expenseDict["ViBlanc"].computePricePerParticipant()
+
+    # Gel
+    expenseDict["Gel"] = expense.expense()
+    expenseDict["Gel"].setExpenseName("Gel")
+    expenseDict["Gel"].addPayerAndAmount(payerName='Adria', amount=7.50)
+    for person in listBeure:
+        expenseDict["Gel"].addBeneficiary(beneficiaryName=person)
+    expenseDict["Gel"].computePricePerParticipant()
 
     # Create expense manager
     expensemanager = expense.expenseManager(expensesDict=expenseDict)
