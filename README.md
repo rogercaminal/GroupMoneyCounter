@@ -9,7 +9,7 @@ This package allows to adjust the money spent by different members of a group.
 
 # How does it work?
 
-Create a new file in the `events/` folder.
+Create a new job option file `myjoboption.txt` in the `events/` folder.
 
 Specify the list(s) of participants (the same participant can be in different categories).
 ```bash
@@ -33,4 +33,9 @@ EXPENSE expense1 BENEFICIARY Category1
 
 EXPENSE expense2 PAYER Charlie 5.00
 EXPENSE expense2 BENEFICIARY Category2
+```
+
+Process the job option with the follwing command:
+```bash
+python compute.py events/myjoboption.txt
 ```
