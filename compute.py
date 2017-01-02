@@ -1,6 +1,6 @@
-import os, sys, pot, expense, config, helper
+import os, sys, pot, expense, config, summary
 
-
+debug = False
 #________________________________________________________________________________________________
 if __name__=="__main__":
 
@@ -33,4 +33,6 @@ if __name__=="__main__":
     expensemanager.compute()
 
     # Compute and print Totals
-    helper.printSummary(pot=Pot, expensemanager=expensemanager, expenseDict=expenseDict)
+    summary = summary.summary(pot=Pot, expensemanager=expensemanager, expenseDict=expenseDict, debug=debug)
+    summary.printTotals()
+    summary.printCorrespondences()
