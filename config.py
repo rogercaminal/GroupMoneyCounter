@@ -29,6 +29,7 @@ class config(object):
                 self.participants[l[1]].append(l[2])
                 if l[2] not in self.participants["All"]:
                     self.participants["All"].append(l[2])
+                    self.pot[l[2]] = 0.
 
             if "POT" in line:
                 if l[1] in self.participants.keys():
@@ -46,5 +47,4 @@ class config(object):
                     self.expenses[l[1]]["PAYER"].append([l[3], float(l[4])])
                 if "BENEFICIARY" in line:
                     self.expenses[l[1]]["BENEFICIARY"] = self.participants[l[3]]
-
         f.close()

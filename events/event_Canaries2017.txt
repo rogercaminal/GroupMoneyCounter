@@ -1,0 +1,37 @@
+# Participants list(s)
+PARTICIPANT dissabte RogerC
+PARTICIPANT dissabte Ceci
+PARTICIPANT dissabte Xavi
+PARTICIPANT dissabte Miquel
+PARTICIPANT dissabte Marc
+PARTICIPANT dissabte Meri
+
+PARTICIPANT diumenge RogerC
+PARTICIPANT diumenge Ceci
+PARTICIPANT diumenge Xavi
+PARTICIPANT diumenge Miquel
+PARTICIPANT diumenge Marc
+PARTICIPANT diumenge Meri
+PARTICIPANT diumenge RogerE
+
+PARTICIPANT dilluns RogerC
+PARTICIPANT dilluns Ceci
+PARTICIPANT dilluns Xavi
+PARTICIPANT dilluns Miquel
+PARTICIPANT dilluns Marc
+PARTICIPANT dilluns Meri
+PARTICIPANT dilluns RogerE
+
+PARTICIPANT dimarts Xavi
+PARTICIPANT dimarts Miquel
+PARTICIPANT dimarts Marc
+PARTICIPANT dimarts Meri
+PARTICIPANT dimarts RogerE
+
+
+# Initial pot
+POT All 0
+
+# List of expense(s)
+EXPENSE Casa_dissabte PAYER Marc 50.00
+EXPENSE Casa_dissabte BENEFICIARY dissabte
