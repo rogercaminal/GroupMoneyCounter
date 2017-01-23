@@ -33,5 +33,14 @@ PARTICIPANT dimarts RogerE
 POT All 0
 
 # List of expense(s)
-EXPENSE Casa_dissabte PAYER Marc 50.00
+EXPENSE Casa_dissabte PAYER Marc 107.25
 EXPENSE Casa_dissabte BENEFICIARY dissabte
+
+EXPENSE Casa_diumenge PAYER Marc 107.25
+EXPENSE Casa_diumenge BENEFICIARY diumenge
+
+EXPENSE Casa_dilluns PAYER Marc 107.25
+EXPENSE Casa_dilluns BENEFICIARY dilluns
+
+EXPENSE Casa_dimarts PAYER Marc 107.25
+EXPENSE Casa_dimarts BENEFICIARY dimarts
