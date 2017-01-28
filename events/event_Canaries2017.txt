@@ -44,3 +44,29 @@ EXPENSE Casa_dilluns BENEFICIARY dilluns
 
 EXPENSE Casa_dimarts PAYER Marc 107.25
 EXPENSE Casa_dimarts BENEFICIARY dimarts
+
+###
+EXPENSE Cotxe_dissabte PAYER Marc 27.5
+EXPENSE Cotxe_dissabte BENEFICIARY dissabte
+
+EXPENSE Cotxe_diumenge PAYER Marc 27.5
+EXPENSE Cotxe_diumenge BENEFICIARY diumenge
+
+EXPENSE Cotxe_dilluns PAYER Marc 27.5
+EXPENSE Cotxe_dilluns BENEFICIARY dilluns
+
+EXPENSE Cotxe_dimarts PAYER Marc 27.5
+EXPENSE Cotxe_dimarts BENEFICIARY dimarts
+
+###
+EXPENSE AparkAndFly_dissabte PAYER Ceci 6
+EXPENSE AparkAndFly_dissabte BENEFICIARY dissabte
+
+EXPENSE AparkAndFly_diumenge PAYER Ceci 6
+EXPENSE AparkAndFly_diumenge BENEFICIARY diumenge
+
+EXPENSE AparkAndFly_dilluns PAYER Ceci 6
+EXPENSE AparkAndFly_dilluns BENEFICIARY dilluns
+
+EXPENSE AparkAndFly_dimarts PAYER Ceci 6
+EXPENSE AparkAndFly_dimarts BENEFICIARY dimarts
