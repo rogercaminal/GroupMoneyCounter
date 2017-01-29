@@ -33,6 +33,8 @@ PARTICIPANT dimarts RogerE
 POT All 0
 
 # List of expense(s)
+
+### 429
 EXPENSE Casa_dissabte PAYER Marc 107.25
 EXPENSE Casa_dissabte BENEFICIARY dissabte
 
@@ -45,20 +47,20 @@ EXPENSE Casa_dilluns BENEFICIARY dilluns
 EXPENSE Casa_dimarts PAYER Marc 107.25
 EXPENSE Casa_dimarts BENEFICIARY dimarts
 
-###
-EXPENSE Cotxe_dissabte PAYER Marc 27.5
+### 109
+EXPENSE Cotxe_dissabte PAYER Marc 27.25
 EXPENSE Cotxe_dissabte BENEFICIARY dissabte
 
-EXPENSE Cotxe_diumenge PAYER Marc 27.5
+EXPENSE Cotxe_diumenge PAYER Marc 27.25
 EXPENSE Cotxe_diumenge BENEFICIARY diumenge
 
-EXPENSE Cotxe_dilluns PAYER Marc 27.5
+EXPENSE Cotxe_dilluns PAYER Marc 27.25
 EXPENSE Cotxe_dilluns BENEFICIARY dilluns
 
-EXPENSE Cotxe_dimarts PAYER Marc 27.5
+EXPENSE Cotxe_dimarts PAYER Marc 27.25
 EXPENSE Cotxe_dimarts BENEFICIARY dimarts
 
-###
+### 24
 EXPENSE AparkAndFly_dissabte PAYER Ceci 6
 EXPENSE AparkAndFly_dissabte BENEFICIARY dissabte
 
@@ -70,3 +72,50 @@ EXPENSE AparkAndFly_dilluns BENEFICIARY dilluns
 
 EXPENSE AparkAndFly_dimarts PAYER Ceci 6
 EXPENSE AparkAndFly_dimarts BENEFICIARY dimarts
+
+### 20
+EXPENSE Esmorzar_dissabte PAYER Meri 20
+EXPENSE Esmorzar_dissabte BENEFICIARY dissabte
+
+### 7.5
+EXPENSE Llenya_dissabte PAYER RogerC 1.88
+EXPENSE Llenya_dissabte BENEFICIARY dissabte
+
+EXPENSE Llenya_diumenge PAYER RogerC 1.88
+EXPENSE Llenya_diumenge BENEFICIARY diumenge
+
+EXPENSE Llenya_dilluns PAYER RogerC 1.88
+EXPENSE Llenya_dilluns BENEFICIARY dilluns
+
+EXPENSE Llenya_dimarts PAYER RogerC 1.88
+EXPENSE Llenya_dimarts BENEFICIARY dimarts
+
+### 47
+EXPENSE Gasolina_dissabte PAYER Xavi 11.75
+EXPENSE Gasolina_dissabte BENEFICIARY dissabte
+
+EXPENSE Gasolina_diumenge PAYER Xavi 11.75
+EXPENSE Gasolina_diumenge BENEFICIARY diumenge
+
+EXPENSE Gasolina_dilluns PAYER Xavi 11.75
+EXPENSE Gasolina_dilluns BENEFICIARY dilluns
+
+EXPENSE Gasolina_dimarts PAYER Xavi 11.75
+EXPENSE Gasolina_dimarts BENEFICIARY dimarts
+
+### 135
+EXPENSE Dinar_dissabte PAYER Miquel 135
+EXPENSE Dinar_dissabte BENEFICIARY dissabte
+
+### 138.23
+EXPENSE Lidl_dissabte PAYER Xavi 34.56
+EXPENSE Lidl_dissabte BENEFICIARY dissabte
+
+EXPENSE Lidl_diumenge PAYER Xavi 34.56
+EXPENSE Lidl_diumenge BENEFICIARY diumenge
+
+EXPENSE Lidl_dilluns PAYER Xavi 34.56
+EXPENSE Lidl_dilluns BENEFICIARY dilluns
+
+EXPENSE Lidl_dimarts PAYER Xavi 34.56
+EXPENSE Lidl_dimarts BENEFICIARY dimarts
