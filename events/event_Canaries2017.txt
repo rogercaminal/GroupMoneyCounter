@@ -28,6 +28,11 @@ PARTICIPANT dimarts Marc
 PARTICIPANT dimarts Meri
 PARTICIPANT dimarts RogerE
 
+PARTICIPANT cocos Xavi
+PARTICIPANT cocos Ceci
+PARTICIPANT cocos RogerC
+PARTICIPANT cocos Meri
+
 
 # Initial pot
 POT All 0
@@ -119,3 +124,19 @@ EXPENSE Lidl_dilluns BENEFICIARY dilluns
 
 EXPENSE Lidl_dimarts PAYER Xavi 34.56
 EXPENSE Lidl_dimarts BENEFICIARY dimarts
+
+### 14
+EXPENSE Cocos_platja PAYER Meri 14
+EXPENSE Cocos_platja BENEFICIARY cocos
+
+### 10
+EXPENSE Pales_platja PAYER Meri 10
+EXPENSE Cocos_platja BENEFICIARY All
+
+### 6
+EXPENSE Esmorzar_dilluns PAYER Miquel 6
+EXPENSE Esmorzar_dilluns BENEFICIARY dilluns
+
+### 170
+EXPENSE dinar_dilluns PAYER Xavi 170
+EXPENSE dinar_dilluns BENEFICIARY dimarts
