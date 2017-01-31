@@ -5,6 +5,13 @@ debug = False
 if __name__=="__main__":
 
     fileName = sys.argv[1]
+    if len(sys.argv)>2:
+        for i in range(1,3):
+            if sys.argv[i]=="-d":
+                debug = True
+            else:
+                fileName = sys.argv[i]
+
     c = config.config(fileName)
     c.process()
 
