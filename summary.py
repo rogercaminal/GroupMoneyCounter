@@ -76,13 +76,13 @@ class summary(object):
                         payment = p[1]
                         n[1] += p[1]
                         p[1] = 0
-                        print "%s pays %s %.2f euros." % (n[0], p[0], payment)
+                        print "%s paga a %s %.2f euros." % (n[0], p[0], payment)
                     elif abs(n[1])<abs(p[1]):
                         payment = abs(n[1])
                         p[1] += n[1]
                         n[1] = 0
-                        print "%s pays %s %.2f euros." % (n[0], p[0], payment)
+                        print "%s paga a %s %.2f euros." % (n[0], p[0], payment)
         if isPot:
             for p in positive:
-                print "%s takes %.2f euros from the pot." % (p[0], p[1])
+                print "%s agafa %.2f euros del pot." % (p[0], p[1])
         print ""                        
