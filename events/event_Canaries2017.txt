@@ -95,6 +95,19 @@ EXPENSE Llenya_dilluns BENEFICIARY dilluns
 EXPENSE Llenya_dimarts PAYER RogerC 1.88
 EXPENSE Llenya_dimarts BENEFICIARY dimarts
 
+### 2.55
+EXPENSE PastisFoc_dissabte PAYER Marc 0.64
+EXPENSE PastisFoc_dissabte BENEFICIARY dissabte
+
+EXPENSE PastisFoc_diumenge PAYER Marc 0.64
+EXPENSE PastisFoc_diumenge BENEFICIARY diumenge
+
+EXPENSE PastisFoc_dilluns PAYER Marc 0.64
+EXPENSE PastisFoc_dilluns BENEFICIARY dilluns
+
+EXPENSE PastisFoc_dimarts PAYER Marc 0.64
+EXPENSE PastisFoc_dimarts BENEFICIARY dimarts
+
 ### 47
 EXPENSE Gasolina_dissabte PAYER Xavi 11.75
 EXPENSE Gasolina_dissabte BENEFICIARY dissabte
@@ -131,7 +144,7 @@ EXPENSE Cocos_platja BENEFICIARY cocos
 
 ### 10
 EXPENSE Pales_platja PAYER Meri 10
-EXPENSE Cocos_platja BENEFICIARY All
+EXPENSE Pales_platja BENEFICIARY All
 
 ### 6
 EXPENSE Esmorzar_dilluns PAYER Miquel 6
@@ -140,3 +153,15 @@ EXPENSE Esmorzar_dilluns BENEFICIARY dilluns
 ### 170
 EXPENSE dinar_dilluns PAYER Xavi 170
 EXPENSE dinar_dilluns BENEFICIARY dimarts
+
+### 20
+EXPENSE minigolf PAYER Miquel 20
+EXPENSE minigolf BENEFICIARY dimarts
+
+### 34
+EXPENSE gins PAYER Meri 34
+EXPENSE gins BENEFICIARY dimarts
+
+### 6.75
+EXPENSE esmorzar_dimarts PAYER Xavi 6.75
+EXPENSE esmorzar_dimarts BENEFICIARY dimarts

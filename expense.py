@@ -25,7 +25,7 @@ class expense(object):
         strToReturn += "Llista de pagadors:\n"
         for i in range(len(self.payerList)):
             strToReturn += "\t- %s - %.2f\n" % (self.payerList[i], self.splittedPaid[i])
-        strToReturn += "Llista de beneficiats (sense els pagadors):\n"
+        strToReturn += "Llista de beneficiats:\n"
         for i in range(len(self.beneficiaryList)):
             strToReturn += "\t- %s\n" % (self.beneficiaryList[i])
         strToReturn += "\n"
@@ -38,12 +38,10 @@ class expense(object):
         self.payerList.append(payerName)
         self.splittedPaid.append(amount)
         self.totalPaid += amount
-        self.totalParticipants += 1
 
     def addBeneficiary(self, beneficiaryName):
-        if beneficiaryName not in self.payerList:
-            self.beneficiaryList.append(beneficiaryName)
-            self.totalParticipants += 1
+        self.beneficiaryList.append(beneficiaryName)
+        self.totalParticipants += 1
 
     def computePricePerParticipant(self):
         self.pricePerParticipant = self.totalPaid/self.totalParticipants
@@ -69,11 +67,6 @@ class expenseManager(object):
     def compute(self):
         for exp in self.expensesDict.keys():
             for i in range(len(self.expensesDict[exp].payerList)):
-                if self.expensesDict[exp].payerList[i] not in self.personTotalSpent.keys():
-                    self.personTotalSpent[self.expensesDict[exp].payerList[i]] = self.expensesDict[exp].pricePerParticipant
-                else:
-                    self.personTotalSpent[self.expensesDict[exp].payerList[i]] += self.expensesDict[exp].pricePerParticipant
-
                 if self.expensesDict[exp].payerList[i] not in self.personTotalPaid.keys():
                     self.personTotalPaid[self.expensesDict[exp].payerList[i]] = self.expensesDict[exp].splittedPaid[i]
                 else:
@@ -84,11 +77,6 @@ class expenseManager(object):
                     self.personTotalSpent[self.expensesDict[exp].beneficiaryList[i]] = self.expensesDict[exp].pricePerParticipant
                 else:
                     self.personTotalSpent[self.expensesDict[exp].beneficiaryList[i]] += self.expensesDict[exp].pricePerParticipant
-
-                if self.expensesDict[exp].beneficiaryList[i] not in self.personTotalPaid.keys():
-                    self.personTotalPaid[self.expensesDict[exp].beneficiaryList[i]] = 0.
-                else:
-                    self.personTotalPaid[self.expensesDict[exp].beneficiaryList[i]] += 0.
 
     def retrieveDict(self):
         return [self.personTotalSpent, self.personTotalPaid]
