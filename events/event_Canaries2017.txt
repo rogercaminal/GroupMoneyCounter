@@ -155,7 +155,7 @@ EXPENSE dinar_dilluns PAYER Xavi 170
 EXPENSE dinar_dilluns BENEFICIARY dimarts
 
 ### 20
-EXPENSE minigolf PAYER Miquel 20
+EXPENSE minigolf PAYER Meri 20
 EXPENSE minigolf BENEFICIARY dimarts
 
 ### 34
