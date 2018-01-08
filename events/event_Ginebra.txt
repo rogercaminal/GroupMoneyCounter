@@ -1,0 +1,26 @@
+# Participants list(s)
+PARTICIPANT Gastos Roger
+PARTICIPANT Gastos Ceci
+
+PARTICIPANT TransferToRoger Roger
+
+PARTICIPANT TransferToCeci Ceci
+
+# Initial pot
+POT All 0
+
+# List of expense(s)
+EXPENSE Desembre_Pis PAYER Roger 1105.69
+EXPENSE Desembre_Pis BENEFICIARY Gastos
+
+EXPENSE Desembre_EDF PAYER Roger 20.15
+EXPENSE Desembre_EDF BENEFICIARY Gastos
+
+EXPENSE Desembre_ADSL PAYER Roger 38.97
+EXPENSE Desembre_ADSL BENEFICIARY Gastos
+
+EXPENSE Desembre_estalvis_Roger PAYER Roger 500
+EXPENSE Desembre_estalvis_Roger BENEFICIARY TransferToRoger
+
+EXPENSE Desembre_estalvis_Ceci PAYER Ceci 200
+EXPENSE Desembre_estalvis_Ceci BENEFICIARY TransferToCeci
